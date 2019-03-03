@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wux-cell-group": "/component/dist/cell-group/index",
+    "wux-cell":"/component/dist/cell/index"
+  }
+}

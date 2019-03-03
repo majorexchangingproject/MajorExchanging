@@ -1,0 +1,27 @@
+<view class="container">
+      <open-data type="userAvatarUrl" class='userinfo-avatar'></open-data>
+      <block wx:if="{{isBind}}">
+        <view class='stu_info'>{{student.name}} {{student.grade}} {{student.academy}} </view>
+      </block>
+      <block wx:else>
+        <open-data type="userNickName" class='userinfo-nickname'></open-data>
+      </block>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+      </view>
+    </view>
+    <view class='function'>
+    <wux-cell-group>
+      <block wx:if="{{isBind}}">
+        <wux-cell title="解除绑定" is-link url="/pages/remove/remove"></wux-cell>
+      </block>
+      <block wx:else>
+        <wux-cell  title="身份认证" is-link url="/pages/identify/identify"></wux-cell>
+      </block>
+        <wux-cell  title="配对信息" is-link url="/pages/partner/partner"></wux-cell>
+        <wux-cell  title="我的收藏" is-link url="/pages/like/like"></wux-cell>
+        <wux-cell  title="新手引导" is-link url="/pages/guide/guide"></wux-cell>
+        <wux-cell  title="联系我们" is-link open-type="contact" bind:contact="onContact"></wux-cell>
+    </wux-cell-group>
+    </view>
+</view>

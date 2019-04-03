@@ -9,7 +9,7 @@ var discovery= {
             "feed_source_name": "小王",
             "feed_source_major": "2017级文学院",
             "feed_source_img": "/static/icon8.png",
-            "answer_ctnt": "有经管院的同学吗？想问一下转专业的事情？",
+            "answer_ctnt": "我想找经管院大三的同学交换专业",
             "good_num": "112",
             "comment_num": "18"
         },

@@ -6,3 +6,48 @@
  height: 100%;
  width: 100%;
 }
+
+.container{
+  height: 550rpx;
+  width: 550rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20rpx 40rpx;
+  padding: 20rpx 20rpx 0rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.tabb{
+  font-size: 14pt;
+  margin: 120rpx 10rpx;
+}
+
+.button-wrapper{
+  font-size: 14pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  width: 350rpx;
+  background: #a1cdea;
+  color: #333333;
+  text-align: center;
+  border-radius: 10rpx;
+  margin: 40rpx 200rpx;
+}
+
+.target-item{
+  margin: -100rpx 50rpx 150rpx 150rpx;
+  font-size: 12pt;
+}
+
+.tip-item{
+  margin:-100rpx 50rpx 100rpx 150rpx;
+  font-size: 10pt;
+  color: gray;
+}
+
+.tip-item image{
+  width: 25rpx;
+  height: 25rpx;
+}

@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container" >
       <open-data type="userAvatarUrl" class='userinfo-avatar'></open-data>
       <block wx:if="{{isBind}}">
         <view class='stu_info'>{{student.name}} {{student.grade}} {{student.academy}} </view>
@@ -10,6 +10,7 @@
       <view class="hd" style="transform:rotateZ({{angle}}deg);">
       </view>
     </view>
+    
     <view class='function'>
     <wux-cell-group>
       <block wx:if="{{isBind}}">

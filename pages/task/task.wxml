@@ -4,4 +4,31 @@
      <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
     </swiper-item>  
    </block>  
-  </swiper>
+</swiper>
+
+<!-- <view class="checkin">
+  <text class="tabb">{{datetoday}}</text>
+  <text wx:if="{{isPunch}}"> 已打卡 </text>
+  <text wx:else> 未打卡 </text>
+</view> -->
+  
+
+<view class="container log-list" style = "background:url('http://a1.qpic.cn/psb?/V14bNFkd3U7yFN/z6mfjXUTnl2F88nCInPxWrnAn8.A.XWrhdfcPPUZLjc!/b/dMAAAAAAAAAA&ek=1&kp=1&pt=0&bo=kQKRAgAAAAARFyA!&tl=3&vuin=2201945951&tm=1554285600&sce=60-2-2&rf=viewer_4');background-size: cover">
+  <text class="tabb">DAY 1：</text>
+  
+  <block wx:for="{{target}}" wx:for-item="tag" wx:key="*this">
+    <text class="target-item">{{tag}}</text>
+  </block>
+
+  <view class="tip-item">
+    <image src="/static/help.png"></image>
+     <a> {{tip}} </a>
+   </view>
+</view>
+
+<view >
+      <button class="button-wrapper" disabled="{{disabled}}" bindtap="onclockin"> 
+       <text wx:if="{{isPunch}}"> 已打卡 </text>
+       <text wx:else> 打 卡 </text>
+       </button>
+</view>

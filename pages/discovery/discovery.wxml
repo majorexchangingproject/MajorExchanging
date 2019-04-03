@@ -18,17 +18,16 @@
                     </view>
                     <view class="answer-actions" bindtap="bindItemTap">
                         <view class="like dot">
-                            
                             <image src="/static/heart2.png"></image>
                             <a>{{item.good_num}} 点赞  </a>
                         </view>
+
                         <view class="comments dot">
-                            
                             <image src="/static/comment.png"></image>
                             <a>{{item.comment_num}} 评论  </a>
                         </view>
+
                         <view class="follow-it">
-                           
                             <image src="/static/star2.png"></image>
                              <a> 收藏 </a>
                         </view>
@@ -38,4 +37,11 @@
         </view>
     </block>
 </scroll-view>
+
+<view >
+      <button class="button-publish"  bindtap="publishItem"> 
+        <image mode='scaleToFill' src="/static/publish.png" plain='true' class='image'></image> 
+        <!-- <text>发  布</text> -->
+      </button>
+</view>
 

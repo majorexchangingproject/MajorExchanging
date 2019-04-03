@@ -1,3 +1,5 @@
+var util = require('../../utils/util.js')
+var app = getApp()
 Page({
 
   /**
@@ -8,14 +10,39 @@ Page({
         { "url":"/static/lunbo1.png" },
         { "url":"/static/lunbo2.png" },
         { "url":"/static/lunbo3.png" }
-      ]  
+      ],
+
+      datetoday:'',
+      target:['今天的任务是与你的匹配对象相互了解一下，聊聊彼此，聊聊专业'],
+      tip:['不会聊天的同学戳这里'],
+
+      isPunch: false
   },
 
+  
+
+  onclockin:function(){
+    wx.navigateTo({
+      url: '/pages/clockin/clockin'
+    })
+    // this.setData({
+    //   isPunch:!this.data.isPunch
+    // })
+    // wx.showToast({
+    //   title: '打卡成功',
+    //   icon:'success',
+    //   duration:1000
+    // })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    console.log('onLoad')
+    var that = this
+    this.setData({
+      datetoday:util.formatDate(new Date())
+    })
   },
 
   /**

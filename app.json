@@ -2,8 +2,10 @@
   "pages": [
     "pages/discovery/discovery",
     "pages/answer/answer",
+    "pages/publish/publish",
     "pages/message/message",
     "pages/task/task",
+    "pages/clockin/clockin",
     "pages/me/me",
     "pages/identify/identify",
     "pages/partner/partner",
@@ -19,31 +21,33 @@
     "navigationBarTitleText": "专交遇到你",
     "navigationBarTextStyle": "black"
   },
+  
   "tabBar": {
     "selectedColor": "#a1cdea",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/message/message",
         "iconPath": "/static/Message.png",
-        "selectedIconPath": "/static/Message.png",
+        "selectedIconPath": "/static/Message_focus.png",
         "text": "消息"
       },
       {
         "pagePath": "pages/discovery/discovery",
         "iconPath": "/static/Discovery.png",
-        "selectedIconPath": "/static/Discovery.png",
+        "selectedIconPath": "/static/Discovery_focus.png",
         "text": "发现"
       },
       {
         "pagePath": "pages/task/task",
         "iconPath": "/static/Task.png",
-        "selectedIconPath": "/static/Task.png",
+        "selectedIconPath": "/static/Task_focus.png",
         "text": "任务"
       },
       {
         "pagePath": "pages/me/me",
         "iconPath": "/static/Me.png",
-        "selectedIconPath": "/static/Me.png",
+        "selectedIconPath": "/static/Me_focus.png",
         "text": "我的"
       }
     ]

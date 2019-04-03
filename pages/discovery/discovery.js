@@ -6,10 +6,16 @@ Page({
     feed: [],
     feed_length: 0
   },
-  //事件处理函数
+
   bindItemTap: function () {
     wx.navigateTo({
-      url: '../answer/answer'
+      url: '/pages/answer/answer'
+    })
+  },
+
+  publishItem: function(){
+    wx.navigateTo({
+      url: '/pages/publish/publish'
     })
   },
 
